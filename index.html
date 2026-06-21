@@ -1,35 +1,299 @@
 <!DOCTYPE html>
+
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OyunBurda | Ücretsiz Oyunlar</title>
+
+<title>OyunBurda | Ücretsiz Online Oyunlar</title>
+
+<meta name="description" content="Ücretsiz online oyunlar. Zeka oyunları, araba oyunları, spor oyunları ve aksiyon oyunları.">
 
 <style>
-body{margin:0;font-family:Arial;background:#111;color:white;text-align:center}
-header{padding:25px;background:#000}
-.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:20px}
-.menu a{background:#00ff88;color:black;padding:12px;text-decoration:none;font-weight:bold;border-radius:8px}
-.ad{background:#222;border:2px dashed #555;margin:15px;padding:20px;color:#aaa}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#00ff88,#00c96b);
+padding:50px 20px;
+text-align:center;
+color:black;
+}
+
+header h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:22px;
+font-weight:bold;
+}
+
+.start-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.start-btn:hover{
+background:#222;
+}
+
+.ad{
+width:90%;
+max-width:1200px;
+margin:25px auto;
+padding:25px;
+border:2px dashed #555;
+background:#222;
+text-align:center;
+color:#999;
+border-radius:10px;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin:40px 0 20px;
+}
+
+.cards{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+width:260px;
+background:#1c1c1c;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 12px rgba(0,255,136,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px 10px 5px;
+text-align:center;
+}
+
+.card p{
+padding:0 10px 15px;
+text-align:center;
+color:#ccc;
+}
+
+.btn{
+display:block;
+margin:10px;
+padding:12px;
+background:#00ff88;
+color:black;
+text-decoration:none;
+font-weight:bold;
+text-align:center;
+border-radius:8px;
+}
+
+.btn:hover{
+background:#00cc6a;
+}
+
+.categories{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.category{
+width:250px;
+background:#1c1c1c;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 12px rgba(0,255,136,.15);
+}
+
+.category h3{
+margin-bottom:10px;
+}
+
+.category p{
+margin-bottom:15px;
+color:#ccc;
+}
+
+footer{
+background:black;
+margin-top:50px;
+padding:30px;
+text-align:center;
+color:#aaa;
+}
+
 </style>
+
 </head>
+
 <body>
 
 <header>
+
 <h1>🎮 OYUNBURDA</h1>
-<p>Ücretsiz Online Oyunlar</p>
+
+<p>Ücretsiz Online Oyunlar Merkezi</p>
+
+<a href="#kategoriler" class="start-btn">
+🚀 Oyunlara Başla
+</a>
+
 </header>
 
-<div class="ad">REKLAM ALANI 1</div>
-
-<div class="menu">
-<a href="zeka.html">🧠 Zeka</a>
-<a href="araba.html">🏎️ Araba</a>
-<a href="spor.html">⚽ Spor</a>
-<a href="aksiyon.html">🔫 Aksiyon</a>
+<div class="ad">
+REKLAM ALANI 1
 </div>
 
-<div class="ad">REKLAM ALANI 2</div>
+<h2 class="section-title">
+🔥 Popüler Oyunlar
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?1">
+<h3>Subway Surfers</h3>
+<p>En popüler koşu oyunu</p>
+<a href="zeka.html" class="btn">🎮 Oyna</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?2">
+<h3>Moto X3M</h3>
+<p>Heyecan dolu motosiklet oyunu</p>
+<a href="araba.html" class="btn">🎮 Oyna</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?3">
+<h3>Basketball Stars</h3>
+<p>Basketbol yıldızı ol</p>
+<a href="spor.html" class="btn">🎮 Oyna</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?4">
+<h3>Stickman Hook</h3>
+<p>Eğlenceli aksiyon oyunu</p>
+<a href="aksiyon.html" class="btn">🎮 Oyna</a>
+</div>
+
+</div>
+
+<div class="ad">
+REKLAM ALANI 2
+</div>
+
+<h2 id="kategoriler" class="section-title">
+📂 Oyun Kategorileri
+</h2>
+
+<div class="categories">
+
+<div class="category">
+<h3>🧠 Zeka Oyunları</h3>
+<p>20 Eğlenceli Zeka Oyunu</p>
+<a href="zeka.html" class="btn">Kategoriye Git</a>
+</div>
+
+<div class="category">
+<h3>🏎️ Araba Oyunları</h3>
+<p>20 Yarış ve Araba Oyunu</p>
+<a href="araba.html" class="btn">Kategoriye Git</a>
+</div>
+
+<div class="category">
+<h3>⚽ Spor Oyunları</h3>
+<p>20 Spor Oyunu</p>
+<a href="spor.html" class="btn">Kategoriye Git</a>
+</div>
+
+<div class="category">
+<h3>🔫 Aksiyon Oyunları</h3>
+<p>20 Aksiyon Oyunu</p>
+<a href="aksiyon.html" class="btn">Kategoriye Git</a>
+</div>
+
+</div>
+
+<h2 class="section-title">
+🏆 En Çok Oynananlar
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3 style="padding:20px;">🥇 Subway Surfers</h3>
+</div>
+
+<div class="card">
+<h3 style="padding:20px;">🥈 Moto X3M</h3>
+</div>
+
+<div class="card">
+<h3 style="padding:20px;">🥉 Basketball Stars</h3>
+</div>
+
+<div class="card">
+<h3 style="padding:20px;">🏅 Stickman Hook</h3>
+</div>
+
+</div>
+
+<footer>
+
+<p>🎮 OyunBurda - Ücretsiz Online Oyunlar</p>
+
+<br>
+
+<p>
+Zeka Oyunları • Araba Oyunları • Spor Oyunları • Aksiyon Oyunları
+</p>
+
+</footer>
 
 </body>
 </html>
